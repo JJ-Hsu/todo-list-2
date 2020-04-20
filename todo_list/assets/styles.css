@@ -1,0 +1,53 @@
+body{
+  background: #5B84B1FF;
+  color: #fff;
+  border: 8px solid #ADEFD1FF;
+}
+
+body *{
+  font-family: Courier New;
+}
+
+h1{
+  font-weight: bold;
+  margin: 20px;
+  font-size: 40px;
+}
+
+h2{
+  font-weight: bold;
+  margin: 20;
+  font-size: 20px;
+}
+
+h3{
+  font-weight: normal;
+  margin: 20px;
+  font-size: 10px;
+}
+
+header{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px 0;
+  margin: 20;
+}
+
+.tasks{
+  padding: 30px;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.task{
+  padding: 10px;
+  border: 4px solid #ADEFD1FF;
+  position: relative;
+  padding-bottom: 27px;
+  padding-top: 0px;
+}
+
+.create-task{
+  padding: 10px;
+  position: relative;
+}
