@@ -2,7 +2,6 @@ from django.shortcuts import render, redirect
 from rest_framework import viewsets
 from .serializers import TodoSerializer
 from .models import Task
-from .import forms
 
 # Create your views here.
 
