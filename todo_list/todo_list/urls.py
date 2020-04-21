@@ -7,12 +7,13 @@ from django.conf import settings
 from django.contrib import admin
 from django.urls import path
 from tasks import views as tasks_views
+from rest_framework import routers
+
+router = routers.DefaultRouter()                      # add this
+router.register(r'todos', tasks_views.TodoView, 'todo')     # add this
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('tasks/', include('tasks.urls')),
-    path('', tasks_views.task_list, name='home'),
-
+    path('admin/', admin.site.urls),         path('api/', include(router.urls))                # add this
 ]
 
 urlpatterns += staticfiles_urlpatterns()
